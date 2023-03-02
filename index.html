@@ -16,13 +16,21 @@
         <h1>COUNT'EM</h1>
         <h2 id="count-el">0</h2>
         <div>
-            <button class="increment-button" onclick="increment()">INCREMENT</button>
-            <button class="increment-button" onclick="save()">RECORD</button>
+            <button class="button" onclick="increment()">INCREMENT</button>
         </div>
         <div>
+            <button class="button" onclick="save()">RECORD</button>
+        </div>
+        <div class="records">
             <p id="save-el">RECORDS: </p>
-            <p id="json-text">test</p>
-            <button class="json-button">SEND</button>
+            <p id="json-text">JSON</p>
+        </div>
+        <div>
+            <p><label for="email">Send JSON to email:</label></p>
+            <p><input type="email" name="email" id="email"></p>
+        </div>
+        <div>
+            <button class="button" onclick="sendEmail()">SEND</button>
         </div>
     </div>
    
